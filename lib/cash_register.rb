@@ -2,7 +2,7 @@ require "pry"
 class CashRegister
   attr_accessor :cash_register, :cash_register_with_discount, :total, :previous_total
 
-  def initialize(disc = 0)
+  def initialize(disc = 0, emp_disc = nil)
     @cash_register_with_discount = disc
     @total = 0.0
     binding.pry
