@@ -4,7 +4,7 @@ class CashRegister
 
   def initialize(disc = 0)
     @cash_register_with_discount = disc
-    @total = 0
+    @total = 0.0
   end
 
   def discount
@@ -13,5 +13,9 @@ class CashRegister
 
   def total
     @total
+  end
+
+  def add_item(title, price)
+    @total += price
   end
 end
