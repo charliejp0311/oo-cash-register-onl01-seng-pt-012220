@@ -5,6 +5,7 @@ class CashRegister
   def initialize(disc = 0)
     @cash_register_with_discount = disc
     @total = 0.0
+    binding.pry
   end
 
   def discount
