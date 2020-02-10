@@ -6,11 +6,11 @@ class CashRegister
     @cash_register_with_discount = disc
     @total = 0
   end
-  
+
   def discount
     @cash_register_with_discount = 20
   end
-  
+
   def total
     @total
   end
