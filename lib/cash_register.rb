@@ -9,7 +9,7 @@ class CashRegister
     binding.pry
   end
   def discount
-
+    @cash_register_with_discount = 20
   end
 
 end
