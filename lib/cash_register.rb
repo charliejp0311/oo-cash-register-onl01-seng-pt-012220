@@ -1,6 +1,6 @@
 require "pry"
 class CashRegister
-  attr_accessor :cash_register, :cash_register_with_discount, :total
+  attr_accessor :cash_register, :cash_register_with_discount, :total, :previous_total
 
   def initialize(disc = 0)
     @cash_register_with_discount = disc
@@ -16,6 +16,7 @@ class CashRegister
   end
 
   def add_item(title, price, quantity = 1)
+    @previous_total = @total
     if quantity > 1
       @total += price * quantity
     else
